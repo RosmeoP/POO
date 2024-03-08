@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Datos Personales</title>
+</head>
+<body>
+
+    <h1>Ingrese sus datos personales</h1>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required><br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" required><br>
+
+    <label for="dui">DUI:</label>
+    <input type="text" id="dui" required><br>
+
+    <label for="genero">Género (M/F):</label>
+    <input type="text" id="genero" maxlength="1" required><br>
+
+    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fechaNacimiento" required><br>
+
+    <button onclick="evaluarDatos()">Evaluar</button>
+
+    <br><br>
+    
+    <label id="resultado"></label>
+
+    <script src="ejercicio1.js"></script>
+
+</body>
+</html>

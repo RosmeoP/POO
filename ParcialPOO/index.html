@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial</title>
+</head>
+<body>
+    <label for="nombre">Ingrese su nombre completo</label>
+    <br>
+    <input type="text" id="nombre">
+    <br>
+    <label for="DUI">Ingrese su DUI</label>
+    <br>
+    <input type="DUI" id="dui">
+     <br>
+     <label for="edad">Ingrese su edad</label>
+     <br>
+     <input type="edad" name="" id="edad">
+     <br>
+     <label for="telefono">Ingrese su número de télefono</label>
+     <input type="text" id="telf">
+     <br>
+     <label for="boleto">Boleto disponible</label>
+     <br>
+     <select name="a1" id="auno">
+        <option value="asientoa">Asiento 001</option>
+     </select>
+     <br>
+     <button type="button" onclick="realizarCompra()">Comprar</button>
+     <table border="1" style="padding: 2px">
+        <thead>
+            <tr>
+                <td>Asiento</td>
+                <td>Precio</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <th>A1</th>
+                <th>$45</th>
+                <th>Disponible</th>
+            </tr>
+        </thead>
+        <tbody id="orderStatus"></tbody>
+    </table>
+    </table>
+
+<script src="main.js"></script>
+</body>
+</html>
