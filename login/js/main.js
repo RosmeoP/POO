@@ -119,7 +119,7 @@ class Main{
 
     const isValid = login.newAccess()
         if(isValid){
-            window.location.href="documents.html"
+            window.location.href="profile.html"
         }
     }
 
@@ -127,4 +127,24 @@ class Main{
 
 
 }
+
+
+function informacion() {              
+    let nombre = document.getElementById('nombre').value
+    let fecha = document.getElementById('fecha').value
+    let genero = document.getElementById('genero').value
+    let departamento = document.getElementById('departamento').value
+    let ciudad = document.getElementById('ciudad').value
+    let telefono = document.getElementById('telefono').value
+    let direccion = document.getElementById('direccion').value
+  
+    var url = 'documents.html?nombre=' + encodeURIComponent(nombre) +
+              '&fecha=' + encodeURIComponent(fecha) +
+              '&genero=' + encodeURIComponent(genero) +
+              '&departamento=' + encodeURIComponent(departamento) +
+              '&ciudad=' + encodeURIComponent(ciudad) +
+              '&telefono=' + encodeURIComponent(telefono) +
+              '&direccion=' + encodeURIComponent(direccion);
+    window.location.href = url;
+  }
 
